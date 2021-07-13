@@ -31,10 +31,10 @@ function countDown() {
 
 
     // Pushing values to html
-    d.innerHTML = days;
-    h.innerHTML = remianingHours;
-    m.innerHTML = remainingMinutes;
-    s.innerHTML = remainingSeconds;
+    d.innerHTML = days < 10 ? "0" + days : days;
+    h.innerHTML = remianingHours < 10 ? "0" + remianingHours : remianingHours;
+    m.innerHTML = remainingMinutes < 10 ? "0" + remainingMinutes : remainingMinutes;
+    s.innerHTML = remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
 
 
 }
